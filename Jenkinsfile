@@ -18,21 +18,21 @@ pipeline {
          * docker build on the command line */
             // acá construyo la imagen con los argumentos respectivos para el ambiente a desplegar
             steps {
-                buildName "#${BUILD_NUMBER}-${ENVIRONMENT}"
+                //buildName "#${BUILD_NUMBER}-${ENVIRONMENT}"
                 script {
                     sh 'echo im building'
                 }
             }
-            //post {
-            //    //notificación del si fue exitoso o no la etapa
-            //    always {
-            //        sh 'echo Pasó BUILD IMAGE'
-            //    //slackSend color: "good", message: "Message from Jenkins Pipeline"
-            //    }
-            //    failure {
-            //        error 'This pipeline stops here!'
-            //    }
-            //}
+            post {
+                //notificación del si fue exitoso o no la etapa
+                always {
+                    sh 'echo Pasó BUILD IMAGE'
+                //slackSend color: "good", message: "Message from Jenkins Pipeline"
+                }
+                failure {
+                    error 'This pipeline stops here!'
+                }
+            }
         }
 
         stage('unit test') {
@@ -42,15 +42,15 @@ pipeline {
                 }
 
             }
-            //post {
-            //    //notificación del si fue exitoso o no la etapa
-            //    always {
-            //        sh 'echo Pasó stop container'
-            //    }
-            //    failure {
-            //        error 'This pipeline stops here!'
-            //    }
-            //}
+            post {
+                //notificación del si fue exitoso o no la etapa
+                always {
+                    sh 'echo Pasó stop container'
+                }
+                failure {
+                    error 'This pipeline stops here!'
+                }
+            }
         }
     }
 }
