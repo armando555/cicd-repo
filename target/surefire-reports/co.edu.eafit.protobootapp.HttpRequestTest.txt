@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.eafit.protobootapp.HttpRequestTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 s - in co.edu.eafit.protobootapp.HttpRequestTest

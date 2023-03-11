@@ -1,0 +1,5 @@
+#Fri Mar 10 20:54:06 COT 2023
+/home/ariosg/cicd-repo/protobootapp-master/src/main/resources/application.properties=1678467222000
+configuration*?=DF91F563EC11A01DD71379B89BA4C85F1E7D26F3
+module-resource*?\:checkstyle-suppressions.xml=E6F842E9B2203D45A7A182DFEE9F33A4DCC8B0FC
+module-resource*?\:checkstyle-xpath-suppressions.xml=8E41D3C701D65F98FD7E83FB6BA2F4901ABEAFEF
