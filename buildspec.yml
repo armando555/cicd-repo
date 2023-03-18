@@ -24,7 +24,7 @@ phases:
     #Si utiliza la imagen estándar de Ubuntu 2.0 o posterior, debe especificar las versiones del tiempo de ejecución.
     #Si especifica las versiones del tiempo de ejecución y utiliza una imagen que no sea la estándar de Ubuntu 2.0, se produce un error en la compilación.
     runtime-versions:
-      java: corretto11
+      java: corretto17
       # name: version
     #commands:
       # - command
